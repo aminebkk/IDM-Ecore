@@ -2,8 +2,8 @@
 
 ## Architecture
 Le dépôt est composé de 2 parties principales :
-- Le dossier [IDM](./IDM/) contient la partie modèle ECore et la génération en XText et Langium. Ce dossier correspond donc à la partie Eclipse.
-- Le dossier [IDM Langium](./IDM%20Langium/) contient la syntaxe concrète Langium effectuée sur Visual Studio Code.
+- Le repo [IDM-Ecore] contient la partie modèle ECore et la génération en XText et Langium. Ce dossier correspond donc à la partie Eclipse.
+- Le repo [IDM Langium]contient la syntaxe concrète Langium effectuée sur Visual Studio Code.
 
 ## ECore
 Le modèle ECore ressemble se trouve dans le dossier [IDM/robot/](./IDM/robot/) et le diagramme associé ressemble à ceci :
