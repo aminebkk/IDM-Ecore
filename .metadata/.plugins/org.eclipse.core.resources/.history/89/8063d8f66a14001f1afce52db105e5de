@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/robot/src-gen" creationIcons="false" editDirectory="/robot.edit/src-gen"
+    editorDirectory="/robot.editor/src-gen" modelPluginID="robot" modelName="Robot"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="17.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>robot.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Robot" disposableProviderFactory="true" ecorePackage="robot.ecore#/">
+    <genClasses ecoreClass="robot.ecore#//Function">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robot.ecore#//Function/functionidentifier"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robot.ecore#//Function/block"/>
+    </genClasses>
+    <genClasses ecoreClass="robot.ecore#//Block">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robot.ecore#//Block/statement"/>
+    </genClasses>
+    <genClasses ecoreClass="robot.ecore#//Statement"/>
+    <genClasses ecoreClass="robot.ecore#//Primitive"/>
+    <genClasses ecoreClass="robot.ecore#//Forward"/>
+    <genClasses ecoreClass="robot.ecore#//Unit"/>
+    <genClasses ecoreClass="robot.ecore#//Cm"/>
+    <genClasses ecoreClass="robot.ecore#//Mm"/>
+    <genClasses ecoreClass="robot.ecore#//Clock">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robot.ecore#//Clock/angle"/>
+    </genClasses>
+    <genClasses ecoreClass="robot.ecore#//Program">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robot.ecore#//Program/function"/>
+    </genClasses>
+    <genClasses ecoreClass="robot.ecore#//CallFunction">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robot.ecore#//CallFunction/functionidentifier"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robot.ecore#//CallFunction/parameters"/>
+    </genClasses>
+    <genClasses ecoreClass="robot.ecore#//FunctionIdentifier">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robot.ecore#//FunctionIdentifier/name"/>
+    </genClasses>
+    <genClasses ecoreClass="robot.ecore#//Var">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robot.ecore#//Var/varidentifier"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robot.ecore#//Var/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="robot.ecore#//VarIdentifier">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robot.ecore#//VarIdentifier/name"/>
+    </genClasses>
+    <genClasses ecoreClass="robot.ecore#//CallVar">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robot.ecore#//CallVar/varidentifier"/>
+    </genClasses>
+    <genClasses ecoreClass="robot.ecore#//Expression"/>
+    <genClasses ecoreClass="robot.ecore#//Const">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robot.ecore#//Const/value"/>
+    </genClasses>
+    <genClasses ecoreClass="robot.ecore#//BinaryExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robot.ecore#//BinaryExpression/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="robot.ecore#//Equals"/>
+    <genClasses ecoreClass="robot.ecore#//Greater"/>
+    <genClasses ecoreClass="robot.ecore#//Lesser"/>
+    <genClasses ecoreClass="robot.ecore#//Add"/>
+    <genClasses ecoreClass="robot.ecore#//Minus"/>
+    <genClasses ecoreClass="robot.ecore#//Mul"/>
+    <genClasses ecoreClass="robot.ecore#//Div"/>
+    <genClasses ecoreClass="robot.ecore#//Distance">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robot.ecore#//Distance/valeur"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robot.ecore#//Distance/unit"/>
+    </genClasses>
+    <genClasses ecoreClass="robot.ecore#//Backward"/>
+    <genClasses ecoreClass="robot.ecore#//Left"/>
+    <genClasses ecoreClass="robot.ecore#//Right"/>
+    <genClasses ecoreClass="robot.ecore#//Movement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robot.ecore#//Movement/distance"/>
+    </genClasses>
+    <genClasses ecoreClass="robot.ecore#//DistanceSensor">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robot.ecore#//DistanceSensor/distance"/>
+    </genClasses>
+    <genClasses ecoreClass="robot.ecore#//TimeSensor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robot.ecore#//TimeSensor/CurrentMillis"/>
+    </genClasses>
+    <genClasses ecoreClass="robot.ecore#//Structure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robot.ecore#//Structure/Condition"/>
+    </genClasses>
+    <genClasses ecoreClass="robot.ecore#//Condition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robot.ecore#//Condition/then"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robot.ecore#//Condition/else"/>
+    </genClasses>
+    <genClasses ecoreClass="robot.ecore#//Loop">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robot.ecore#//Loop/statement"/>
+    </genClasses>
+    <genClasses ecoreClass="robot.ecore#//BooleanExpression"/>
+    <genClasses ecoreClass="robot.ecore#//OR"/>
+    <genClasses ecoreClass="robot.ecore#//AND"/>
+    <genClasses ecoreClass="robot.ecore#//NOT"/>
+    <genClasses ecoreClass="robot.ecore#//TRUE"/>
+    <genClasses ecoreClass="robot.ecore#//FALSE"/>
+  </genPackages>
+</genmodel:GenModel>

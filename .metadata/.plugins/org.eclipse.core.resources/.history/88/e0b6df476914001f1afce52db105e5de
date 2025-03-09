@@ -1,0 +1,37 @@
+/**
+ */
+package robot.impl;
+
+import org.eclipse.emf.ecore.EClass;
+
+import robot.Loop;
+import robot.RobotPackage;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Loop</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * @generated
+ */
+public class LoopImpl extends StructureImpl implements Loop {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected LoopImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return RobotPackage.Literals.LOOP;
+	}
+
+} //LoopImpl

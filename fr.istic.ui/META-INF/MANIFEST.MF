@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: fr.istic.ui
+Bundle-ManifestVersion: 2
+Bundle-Name: fr.istic.ui
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: fr.istic.ui; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: fr.istic,
+ fr.istic.ide,
+ robot,
+ org.eclipse.xtext.ui,
+ org.eclipse.xtext.ui.shared,
+ org.eclipse.xtext.ui.codetemplates.ui,
+ org.eclipse.ui.editors;bundle-version="3.14.300",
+ org.eclipse.ui.ide;bundle-version="3.18.500",
+ org.eclipse.ui,
+ org.eclipse.compare,
+ org.eclipse.xtext.builder
+Import-Package: org.apache.log4j
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Export-Package: fr.istic.ui.contentassist,
+ fr.istic.ui.quickfix,
+ fr.istic.ui.internal
+Bundle-Activator: fr.istic.ui.internal.IsticActivator
